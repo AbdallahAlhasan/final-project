@@ -1,0 +1,130 @@
+/* ---------- General ---------- */
+body {
+    font-family: "Tahoma", sans-serif;
+    background: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-right .user-info {
+    font-weight: bold;
+}
+
+/* ---------- Container ---------- */
+.container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+/* ---------- Forms ---------- */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* ---------- Alerts ---------- */
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.alert.success { background: #d4edda; color: #155724; }
+.alert.danger { background: #f8d7da; color: #721c24; }
+.alert.warning { background: #fff3cd; color: #856404; }
+.alert.info { background: #d1ecf1; color: #0c5460; }
+
+/* ---------- Calculator ---------- */
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calculator-display {
+    width: 100%;
+    height: 50px;
+    font-size: 2em;
+    text-align: right;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator-buttons button {
+    padding: 20px;
+    font-size: 1.2em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.calculator-buttons button:hover {
+    background-color: #e0e0e0;
+}
